@@ -1,0 +1,8 @@
+import marcas.*
+import personas.*
+import jarra.*
+test "contAlc"{
+	var hobfrau=new CervezaRubia(lupulo=2,pais="alemania",graduacion=0.08)
+	var jarra=new Jarra(capacidad=0.5,marca=hobfrau)
+	assert.equals(0.04,jarra.contenidoDeAlcohol())
+}
