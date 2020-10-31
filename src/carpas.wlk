@@ -18,5 +18,10 @@ class Carpa{
 			self.error("la persona no esta en la carpa")
 		}
 	}
-	
+	method cantEmpedernidos(){
+		personasDentro.count({p=>p.esEbrioEmpedernido()})
+	}
+	method esHomogenea(){
+		return personasDentro.map({p=>p.pais()}).size()==1
+	}
 }
